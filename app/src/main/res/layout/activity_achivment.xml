@@ -20,7 +20,7 @@
         android:id="@+id/textView"
         android:layout_width="413dp"
         android:layout_height="140dp"
-        android:background="@drawable/box_purple"
+        android:background="@drawable/box_purple2"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp" />
 
