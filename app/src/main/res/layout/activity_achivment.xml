@@ -6,31 +6,179 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4E4F87"
+    android:paddingLeft="1dp"
+    android:paddingTop="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp"
     tools:context=".achivment">
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="180dp"
-        android:layout_height="58dp"
-        android:background="#1A82CB"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="306dp" />
+        android:id="@+id/textView4"
+        android:layout_width="411dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="2dp"
+        android:background="#342486"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView3"
         android:layout_width="413dp"
-        android:layout_height="140dp"
-        android:background="@drawable/box_purple2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_height="9dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="154dp"
+        android:background="#8074FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="366dp"
-        android:layout_height="52dp"
-        android:background="#1A82CB"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/box_purple_achivment"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
         android:text="ACHIVMENT"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="121dp" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#275378"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="ACHIVMENT"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="180dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#7C76FD"
+        android:elevation="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="COLLECTION"
+        android:textSize="20sp"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="210dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="389dp"
+        android:layout_marginEnd="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="388dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="565dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="566dp"
+        android:layout_marginEnd="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="567dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/achivment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
