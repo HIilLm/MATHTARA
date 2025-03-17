@@ -7,15 +7,49 @@
     android:layout_height="match_parent"
     tools:context=".shop">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="181dp"
-        android:layout_marginTop="199dp"
-        android:layout_marginBottom="484dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3A4F88">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="364dp"
+            android:layout_height="181dp"
+            android:background="@drawable/box_blue"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="91dp"
+            android:layout_height="125dp"
+            android:background="@drawable/box_purple"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="338dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="91dp"
+            android:layout_height="125dp"
+            android:background="@drawable/box_purple"
+            tools:layout_editor_absoluteX="169dp"
+            tools:layout_editor_absoluteY="338dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="91dp"
+            android:layout_height="125dp"
+            android:background="@drawable/box_purple"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="338dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="91dp"
+            android:layout_height="125dp"
+            android:background="@drawable/box_purple"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="523dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
