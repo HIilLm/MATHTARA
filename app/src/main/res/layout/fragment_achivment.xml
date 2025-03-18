@@ -6,7 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4E4F87"
-    tools:context=".collection">
+    android:paddingLeft="1dp"
+    android:paddingTop="1dp"
+    android:paddingRight="1dp"
+    android:paddingBottom="1dp"
+    tools:context=".achivment">
 
     <TextView
         android:id="@+id/textView4"
@@ -39,7 +43,7 @@
         android:elevation="8dp"
         android:fontFamily="@font/poppins_bold"
         android:gravity="center"
-        android:text="COLLECTION"
+        android:text="ACHIVMENT"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="20dp"
@@ -55,10 +59,9 @@
         android:layout_height="52dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="70dp"
-        android:backgroundTint="#7C76FD"
+        android:backgroundTint="#275378"
         android:elevation="8dp"
         android:fontFamily="@font/poppins_bold"
-        android:shadowColor="#000000"
         android:text="ACHIVMENT"
         android:textSize="20sp"
         android:translationZ="10dp"
@@ -71,7 +74,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="70dp"
         android:layout_marginEnd="21dp"
-        android:backgroundTint="#275378"
+        android:backgroundTint="#7C76FD"
         android:elevation="8dp"
         android:fontFamily="@font/poppins_bold"
         android:text="COLLECTION"
@@ -92,7 +95,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -102,7 +105,7 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -112,7 +115,7 @@
         android:layout_marginTop="210dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -124,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -134,7 +137,7 @@
         android:layout_marginEnd="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -144,7 +147,7 @@
         android:layout_marginTop="388dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -154,7 +157,7 @@
         android:layout_marginTop="565dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -166,7 +169,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection" />
+        app:srcCompat="@drawable/achivment" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -176,6 +179,6 @@
         android:layout_marginEnd="21dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/collection_black" />
+        app:srcCompat="@drawable/achivment" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
