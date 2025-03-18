@@ -18,9 +18,7 @@
         <activity
             android:name=".Login"
             android:exported="false"
-            android:label="@string/title_activity_shops"
             android:theme="@style/Theme.MATHTARATIM1.NoActionBar" />
-        <activity
         <activity
             android:name=".shop"
             android:exported="false"
