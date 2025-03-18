@@ -22,15 +22,16 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="418dp"
-            android:layout_height="94dp"
+            android:layout_width="461dp"
+            android:layout_height="98dp"
             android:layout_marginTop="412dp"
             android:layout_marginBottom="225dp"
             android:background="@drawable/box_blue"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/button"
@@ -134,6 +135,20 @@
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="385dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="554dp"
+            android:fontFamily="@font/poppins"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. "
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
