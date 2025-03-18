@@ -122,6 +122,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
@@ -144,12 +155,13 @@
             android:layout_width="385dp"
             android:layout_height="113dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="554dp"
+            android:layout_marginTop="552dp"
             android:fontFamily="@font/poppins"
-            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. "
+            android:text="Malin Kundang adalah pemuda miskin yang merantau untuk mengubah nasib. Setelah bertahun-tahun, ia sukses menjadi saudagar kaya dan menikah dengan wanita bangsawan. Ketika kembali ke kampung halamannya, ia malu mengakui ibunya yang miskin. Sang ibu merasa sedih dan kecewa karena anaknya durhaka. Ia pun berdoa agar Malin mendapat balasan atas perbuatannya. Tak lama kemudian, kapal Malin dihantam badai, dan ia berubah menjadi batu. Kisah ini mengajarkan pentingnya berbakti kepada orang tua dan tidak melupakan asal-usul."
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
