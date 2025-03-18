@@ -1,7 +1,10 @@
 package com.example.mathtaratim1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -21,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
     private HomeFragment homeFragment = new HomeFragment();
     private CollectionFragment collectionFragment = new CollectionFragment();
     private FavoriteFragment favoriteFragment = new FavoriteFragment();
+    ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,15 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+        });
+
+        imageView = findViewById(R.id.avatar);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Register.class);
+                startActivity(intent);
+            }
         });
 
 
