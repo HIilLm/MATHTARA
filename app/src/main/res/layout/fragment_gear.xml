@@ -69,7 +69,7 @@
             app:layout_constraintHorizontal_bias="0.428"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.374" />
+            app:layout_constraintVertical_bias="0.409" />
 
         <TextView
             android:id="@+id/textView7"
@@ -127,8 +127,8 @@
             android:id="@+id/imageView5"
             android:layout_width="410dp"
             android:layout_height="262dp"
-            android:layout_marginStart="4dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/fotopam" />
