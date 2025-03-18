@@ -125,10 +125,10 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="397dp"
+            android:layout_width="410dp"
             android:layout_height="262dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/fotopam" />
