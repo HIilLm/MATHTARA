@@ -145,14 +145,12 @@
             android:layout_height="113dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="554dp"
-            android:fontFamily="@font/poppins"
+            android:fontFamily="@font/poppins_medium"
             android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. "
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
