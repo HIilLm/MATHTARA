@@ -23,8 +23,4 @@
         android:background="#0F1E33"
         app:itemTextColor="@color/white"
         />
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
