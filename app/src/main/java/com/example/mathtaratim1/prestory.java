@@ -29,8 +29,7 @@ public class prestory extends AppCompatActivity {
             return insets;
         });
 
-        goBack = (Button) findViewById(R.id.imageView20);
-        goBack.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(prestory.this, MainActivity.class);
