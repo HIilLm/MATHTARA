@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class prestory extends AppCompatActivity {
 
-    Button goBack;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,8 @@ public class prestory extends AppCompatActivity {
             return insets;
         });
 
-
+        ImageButton goBack = findViewById(R.id.imageView200);
+        goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(prestory.this, MainActivity.class);
