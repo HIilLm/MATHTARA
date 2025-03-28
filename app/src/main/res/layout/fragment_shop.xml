@@ -6,6 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -103,13 +108,14 @@
 
         <TextView
             android:id="@+id/textView16"
-            android:layout_width="364dp"
-            android:layout_height="496dp"
+            android:layout_width="367dp"
+            android:layout_height="368dp"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="531dp"
+            android:layout_marginTop="532dp"
             android:layout_marginEnd="54dp"
             android:background="@drawable/box_blue"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -146,41 +152,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="153dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="584dp"
-            android:background="@drawable/box_bluecloud"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView22"
-            android:layout_width="153dp"
-            android:layout_height="200dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="804dp"
-            android:background="@drawable/box_bluecloud"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/textView24"
             android:layout_width="153dp"
             android:layout_height="200dp"
-            android:layout_marginTop="584dp"
-            android:layout_marginEnd="32dp"
-            android:background="@drawable/box_gold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView26"
-            android:layout_width="153dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="804dp"
-            android:layout_marginEnd="65dp"
+            android:layout_marginTop="568dp"
+            android:layout_marginEnd="132dp"
             android:background="@drawable/box_gold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -222,31 +198,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView21"
-            android:layout_width="153dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="744dp"
-            android:background="@drawable/box_white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="153dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="65dp"
-            android:layout_marginTop="964dp"
-            android:background="@drawable/box_white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/textView25"
             android:layout_width="153dp"
             android:layout_height="40dp"
-            android:layout_marginTop="744dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginTop="728dp"
+            android:layout_marginEnd="132dp"
             android:background="@drawable/box_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -255,45 +211,11 @@
             android:id="@+id/imageView20"
             android:layout_width="29dp"
             android:layout_height="22dp"
-            android:layout_marginStart="256dp"
-            android:layout_marginTop="748dp"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="732dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/minidm" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="153dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="964dp"
-            android:layout_marginEnd="65dp"
-            android:background="@drawable/box_white"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView19"
-            android:layout_width="29dp"
-            android:layout_height="22dp"
-            android:layout_marginTop="972dp"
-            android:layout_marginEnd="143dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/minidm" />
-
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="50dp"
-            android:layout_height="23dp"
-            android:layout_marginTop="972dp"
-            android:layout_marginEnd="105dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="375"
-            android:textAlignment="center"
-            android:textColor="#0B1423"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView11"
@@ -404,44 +326,14 @@
             app:srcCompat="@drawable/gerobakdiamond" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="121dp"
-            android:layout_height="122dp"
-            android:layout_marginStart="48dp"
-            android:layout_marginTop="620dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/pedangbasic" />
-
-        <ImageView
             android:id="@+id/imageView8"
             android:layout_width="130dp"
             android:layout_height="122dp"
-            android:layout_marginTop="620dp"
-            android:layout_marginEnd="44dp"
+            android:layout_marginTop="588dp"
+            android:layout_marginEnd="144dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/pedanglegend" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="121dp"
-            android:layout_height="117dp"
-            android:layout_marginStart="74dp"
-            android:layout_marginTop="829dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tamengbasic" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="122dp"
-            android:layout_height="123dp"
-            android:layout_marginTop="823dp"
-            android:layout_marginEnd="78dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/tamenglegend" />
 
         <TextView
             android:id="@+id/textView6"
@@ -565,66 +457,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/imageView16"
-            android:layout_width="29dp"
-            android:layout_height="22dp"
-            android:layout_marginStart="72dp"
-            android:layout_marginTop="748dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/minidm" />
-
-        <TextView
-            android:id="@+id/textView36"
-            android:layout_width="50dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="84dp"
-            android:layout_marginTop="748dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="100"
-            android:textAlignment="center"
-            android:textColor="#0B1423"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <TextView
             android:id="@+id/textView37"
             android:layout_width="50dp"
             android:layout_height="23dp"
-            android:layout_marginTop="748dp"
-            android:layout_marginEnd="76dp"
+            android:layout_marginTop="732dp"
+            android:layout_marginEnd="172dp"
             android:fontFamily="@font/poppins_bold"
             android:text="375"
             android:textAlignment="center"
             android:textColor="#0B1423"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/imageView18"
-            android:layout_width="29dp"
-            android:layout_height="22dp"
-            android:layout_marginStart="105dp"
-            android:layout_marginTop="973dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/minidm" />
-
-        <TextView
-            android:id="@+id/textView38"
-            android:layout_width="50dp"
-            android:layout_height="23dp"
-            android:layout_marginStart="119dp"
-            android:layout_marginTop="972dp"
-            android:fontFamily="@font/poppins_bold"
-            android:text="100"
-            android:textAlignment="center"
-            android:textColor="#0B1423"
-            android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -659,5 +503,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
