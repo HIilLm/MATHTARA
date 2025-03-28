@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ceritaa1"
+    tools:context=".cerita1s1">
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="270dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="445dp"
+        android:layout_marginEnd="31dp"
+        android:background="@drawable/box_cerita_grey"
+        android:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="328dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="43dp"
+        android:fontFamily="@font/poppins_bold"
+        android:justificationMode="inter_word"
+        android:text="Di suatu daerah di SumateraBarat, hidup seorang anak malin kundang bersama ibunya, hidupnya kismin dan memperhartinkan, malin kundang memiliki cita cita yang besar, yaitu menjadi petualang yang kaya, di usia remaja malin kundang ditawari pekerjaan oleh pria misterius yang menggunakan topi jerami"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="160dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="619dp"
+        android:layout_marginEnd="221dp"
+        android:backgroundTint="#2C8FE9"
+        android:fontFamily="@font/poppins_bold"
+        android:text="IKUTI AJAKAN TOPI JERAMI"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="185dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="619dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#2C8FE9"
+        android:fontFamily="@font/poppins_bold"
+        android:text="TOLAK AJAKAN, DAN TETAP BERSAMA IBU"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
