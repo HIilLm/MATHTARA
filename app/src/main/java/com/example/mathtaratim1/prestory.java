@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -29,7 +30,7 @@ public class prestory extends AppCompatActivity {
             return insets;
         });
 
-        ImageButton goBack = findViewById(R.id.imageView20);
+        ImageView goBack = findViewById(R.id.imageView20);
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
