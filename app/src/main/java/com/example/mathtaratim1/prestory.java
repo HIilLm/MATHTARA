@@ -29,7 +29,7 @@ public class prestory extends AppCompatActivity {
             return insets;
         });
 
-        goBack = (Button) findViewById(R.id.back);
+        goBack = (Button) findViewById(R.id.imageView20);
         goBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
