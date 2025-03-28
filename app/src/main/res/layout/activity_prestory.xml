@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4E4F87"
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,10 +12,6 @@
     android:fillViewport="true"
     tools:context=".prestory">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#4E4F87">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -108,7 +109,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_bookmark_border_24" />
+</ScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
