@@ -1,5 +1,6 @@
 package com.example.mathtaratim1;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -8,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import androidx.lifecycle.ViewModelProvider;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,6 +23,7 @@ public class FavoriteFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private SharedViewModel sharedViewModel;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -27,13 +31,6 @@ public class FavoriteFragment extends Fragment {
 
     public FavoriteFragment() {
         // Required empty public constructor
-        String savedData = ActivityMain.savedData;
-        ImageView malin = findViewById(R.id.malinkundang2);
-        if (savedData != null && savedData.equals("true")) {
-            malin.setVisibility(View.VISIBLE);
-        } else {
-            malil.setVisibility(View.GONE);
-        }
     }
 
     /**
@@ -67,6 +64,23 @@ public class FavoriteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_favorite, container, false);
+        View view = inflater.inflate(R.layout.fragment_favorite, container, false);
+
+        // Initialize ViewModel using requireActivity() to share across fragments
+        sharedViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
+
+        // Get reference to TextView
+        ImageView malin = view.findViewById(R.id.malinkundang2);
+
+        // Observe changes in ViewModel
+        sharedViewModel.getSavedData().observe(getViewLifecycleOwner(), data -> {
+            if (data != null && !data.isEmpty()) {
+                malin.setVisibility(View.VISIBLE);
+            } else {
+                malin.setVisibility(View.GONE);
+            }
+        });
+
+        return view;
     }
 }
