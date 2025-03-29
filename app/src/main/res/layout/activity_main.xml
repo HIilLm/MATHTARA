@@ -81,7 +81,7 @@
         android:layout_marginStart="172dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/coin" />
+        app:srcCompat="@drawable/coins" />
 
     <TextView
         android:id="@+id/name"

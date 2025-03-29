@@ -11,23 +11,23 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class achivment extends AppCompatActivity {
+public class cerita1s2 extends AppCompatActivity {
 
-    Button collection;
+    Button serang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_achivment);
+        setContentView(R.layout.activity_cerita1s2);
 
-        collection = (Button) findViewById(R.id.button9);
+        serang = (Button) findViewById(R.id.button4);
 
-        collection.setOnClickListener(new View.OnClickListener() {
+        serang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent collection = new Intent(getApplicationContext(), collection.class);
-                startActivity(collection);
+                Intent serang = new Intent(getApplicationContext(), quiz1.class);
+                startActivity(serang);
             }
         });
 

@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +27,13 @@ public class FavoriteFragment extends Fragment {
 
     public FavoriteFragment() {
         // Required empty public constructor
+        String savedData = ActivityMain.savedData;
+        ImageView malin = findViewById(R.id.malinkundang2);
+        if (savedData != null && savedData.equals("true")) {
+            malin.setVisibility(View.VISIBLE);
+        } else {
+            malil.setVisibility(View.GONE);
+        }
     }
 
     /**
