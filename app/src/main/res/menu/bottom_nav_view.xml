@@ -17,7 +17,7 @@
     </item>
     <item
         android:id="@+id/collection"
-        android:title="Collection"
+        android:title="Achievement"
         android:icon="@drawable/baseline_catching_pokemon_24">
     </item>
     <item
