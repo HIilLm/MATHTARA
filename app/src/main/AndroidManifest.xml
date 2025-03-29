@@ -34,6 +34,15 @@
             android:name=".cerita1s3"
             android:exported="false" />
         <activity
+            android:name=".quiz1"
+            android:exported="false" />
+        <activity
+            android:name=".quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".quiz3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
