@@ -27,7 +27,7 @@ public class cerita1e2 extends AppCompatActivity {
         toHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toHome = new Intent(cerita1e3.this, prestory.class);
+                Intent toHome = new Intent(cerita1e2.this, prestory.class);
                 startActivity(toHome);
             }
         });
