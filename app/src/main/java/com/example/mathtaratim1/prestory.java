@@ -22,7 +22,7 @@ public class prestory extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_prestory);
 
-        Button next_cerita = findViewById(R.id.button);
+        Button toCerita = findViewById(R.id.button);
         ImageView save = findViewById(R.id.imageView21);
 
         save.setOnClickListener(new View.OnClickListener() {
@@ -34,11 +34,11 @@ public class prestory extends AppCompatActivity {
                 }
             }
         });
-        next_cerita.setOnClickListener(new View.OnClickListener() {
+        toCerita.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent next_cerita = new Intent(getApplicationContext(), cerita1s1.class);
-                startActivity(next_cerita);
+                Intent cerita = new Intent(getApplicationContext(), cerita1s1.class);
+                startActivity(cerita);
             }
         });
 

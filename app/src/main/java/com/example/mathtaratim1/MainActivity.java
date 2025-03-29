@@ -3,7 +3,6 @@ package com.example.mathtaratim1;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements
         NavigationBarView.OnItemSelectedListener, ShopFragment.OnGemPurchaseListener {
 
     private BottomNavigationView bottomNavigationView;
+    private SharedViewModel sharedViewModel;
     private ShopFragment shopFragment = new ShopFragment();
     private GearFragment gearFragment = new GearFragment();
     private HomeFragment homeFragment = new HomeFragment();
@@ -43,10 +44,17 @@ public class MainActivity extends AppCompatActivity implements
             return insets;
         });
 
+        sharedViewModel = new ViewModelProvider(this).get(SharedViewModel.class);
+        Intent getSaved = getIntent();
+        if (getSaved != null && getSaved.hasExtra("saved")) {
+            String savedData = getSaved.getStringExtra("saved");
+            sharedViewModel.setSavedData(savedData);
+        }
+
         imageView = findViewById(R.id.avatar);
         imageView.setOnClickListener(v -> {
-            Intent regist = new Intent(MainActivity.this, Login.class);
-            startActivity(regist);
+            Intent intent = new Intent(MainActivity.this, Login.class);
+            startActivity(intent);
         });
 
         gemTextView = findViewById(R.id.gem); // Hubungkan dengan TextView navbar
