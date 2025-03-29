@@ -25,6 +25,7 @@ public class GearFragment extends Fragment {
     private String mParam2;
 
     public GearFragment() {
+
         // Required empty public constructor
     }
 
