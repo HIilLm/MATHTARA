@@ -19,10 +19,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="31dp"
             android:layout_marginTop="123dp"
+            android:layout_marginEnd="137dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Create Account"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,19 +48,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="167dp"
+            android:layout_marginEnd="193dp"
             android:layout_marginBottom="541dp"
             android:fontFamily="@font/poppins"
             android:text="Already have an account?"
             android:textColor="#FFFFFF"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/username"
             android:layout_width="348dp"
             android:layout_height="59dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="229dp"
+            android:layout_marginEnd="31dp"
             android:layout_marginBottom="443dp"
             android:background="#EEEDF4"
             android:drawableLeft="@drawable/baseline_person_24"
@@ -71,13 +79,17 @@
             android:textColor="@color/black"
             android:textColorHint="#565353"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="348dp"
             android:layout_height="59dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="31dp"
             android:layout_marginBottom="352dp"
             android:background="#EEEDF4"
             android:drawableLeft="@drawable/baseline_email_24"
@@ -90,13 +102,17 @@
             android:textColor="@color/black"
             android:textColorHint="#565353"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/password"
             android:layout_width="348dp"
             android:layout_height="59dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="411dp"
+            android:layout_marginEnd="31dp"
             android:layout_marginBottom="261dp"
             android:background="#EEEDF4"
             android:drawableLeft="@drawable/baseline_password_24"
@@ -109,13 +125,17 @@
             android:textColor="@color/black"
             android:textColorHint="#565353"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/repassword"
             android:layout_width="348dp"
             android:layout_height="59dp"
             android:layout_marginStart="32dp"
+            android:layout_marginTop="502dp"
+            android:layout_marginEnd="31dp"
             android:layout_marginBottom="170dp"
             android:background="#EEEDF4"
             android:drawableLeft="@drawable/baseline_password_24"
@@ -128,20 +148,26 @@
             android:textColor="@color/black"
             android:textColorHint="#565353"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="280dp"
             android:layout_height="59dp"
             android:layout_marginStart="66dp"
+            android:layout_marginTop="614dp"
+            android:layout_marginEnd="65dp"
             android:layout_marginBottom="58dp"
             android:backgroundTint="#2C8FE9"
             android:fontFamily="@font/poppins_semibold"
             android:text="Register"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

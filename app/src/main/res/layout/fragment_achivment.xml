@@ -45,8 +45,9 @@
         android:id="@+id/textView2"
         android:layout_width="366dp"
         android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="86dp"
+        android:layout_marginEnd="19dp"
         android:background="@drawable/box_purple_achivment"
         android:elevation="8dp"
         android:fontFamily="@font/poppins_bold"
@@ -57,9 +58,8 @@
         android:textSize="20dp"
         android:translationZ="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -84,7 +84,7 @@
         app:srcCompat="@drawable/achivment" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/achievement1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
