@@ -13,8 +13,10 @@
         android:layout_height="240dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="478dp"
+        android:layout_marginEnd="7dp"
         android:background="@drawable/box_cerita_grey"
         android:backgroundTint="#D9D9D9"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -41,10 +43,12 @@
         android:layout_height="52dp"
         android:layout_marginStart="112dp"
         android:layout_marginTop="652dp"
+        android:layout_marginEnd="114dp"
         android:backgroundTint="#2C8FE9"
         android:fontFamily="@font/poppins_bold"
         android:text="DIAM SAJA"
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
