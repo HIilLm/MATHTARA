@@ -28,9 +28,7 @@ public class MainActivity extends AppCompatActivity implements
     private FavoriteFragment favoriteFragment = new FavoriteFragment();
 
     private int totalGems = 0; // Awalnya 0
-    private int totalGolds = 0; // Awalnya 0
     private TextView gemTextView; // TextView untuk menampilkan jumlah gems
-    private TextView goldTextView;
     ImageView imageView;
 
     @Override
@@ -53,9 +51,6 @@ public class MainActivity extends AppCompatActivity implements
 
         gemTextView = findViewById(R.id.gem); // Hubungkan dengan TextView navbar
         updateGemText(); // Tampilkan jumlah awal gems
-
-        goldTextView = findViewById(R.id.coin); // Hubungkan dengan TextView navbar
-        updateGoldText(); // Tampilkan jumlah awal gems
 
         bottomNavigationView = findViewById(R.id.bottomView);
         getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, homeFragment).commit();
@@ -94,15 +89,6 @@ public class MainActivity extends AppCompatActivity implements
 
     private void updateGemText() {
         gemTextView.setText(String.valueOf(totalGems)); // Perbarui teks di navbar
-    }
-
-    public void onGoldPurchased(int gold) {
-        totalGolds += gold; // Tambahkan jumlah gems
-        updateGoldText(); // Update TextView di navbar
-    }
-
-    private void updateGoldText(){
-        goldTextView.setText(String.valueOf(totalGolds)); // Perbarui teks di navbar
     }
 
 }

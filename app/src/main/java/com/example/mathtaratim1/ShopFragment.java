@@ -11,19 +11,6 @@ import androidx.fragment.app.Fragment;
 public class ShopFragment extends Fragment {
 
     private OnGemPurchaseListener gemPurchaseListener; // Interface untuk komunikasi dengan MainActivity
-    private  OnGoldPurchaseListener goldPurchaseListener;
-
-    public interface OnGoldPurchaseListener {
-        void onGoldPurchased(int gold);
-    }
-
-    private void buyGolds(int amount) {
-        if (goldPurchaseListener != null) {
-            goldPurchaseListener.onGoldPurchased(amount); // Kirim jumlah gems ke MainActivity
-            Toast.makeText(getActivity(), "Gold bertambah: " + amount, Toast.LENGTH_SHORT).show();
-        }
-    }
-
 
     public ShopFragment() {
         // Required empty public constructor
@@ -47,14 +34,6 @@ public class ShopFragment extends Fragment {
         View btnGem15K = view.findViewById(R.id.forgem15k);
         View btnGem85K = view.findViewById(R.id.textView34);
         View btnGem175K = view.findViewById(R.id.textView35);
-
-        View btnGold20 = view.findViewById(R.id.forgoldmurah);
-        View btnGold250 = view.findViewById(R.id.textView31);
-        View btnGold750 = view.findViewById(R.id.textView32);
-
-        btnGold20.setOnClickListener(v -> buyGolds(100));
-        btnGold250.setOnClickListener(v -> buyGolds(500));
-        btnGold750.setOnClickListener(v -> buyGolds(1000));
 
         btnGem15K.setOnClickListener(v -> buyGems(75));
         btnGem85K.setOnClickListener(v -> buyGems(250));
