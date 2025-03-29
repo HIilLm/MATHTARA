@@ -1,6 +1,9 @@
 package com.example.mathtaratim1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,11 +13,24 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class cerita1s2 extends AppCompatActivity {
 
+    Button serang;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_cerita1s2);
+
+        serang = (Button) findViewById(R.id.button4);
+
+        serang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent serang = new Intent(getApplicationContext(), quiz1.class);
+                startActivity(serang);
+            }
+        });
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
