@@ -4,21 +4,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class Login extends AppCompatActivity {
 
-    Button login;
-    Button createacc;
-    TextView email;
-    TextView password;
+    private Button login, createAcc;
+    private EditText email, password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,23 +23,21 @@ public class Login extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
 
-        email = (TextView) findViewById(R.id.editTextTextEmailAddress);
-        password = (TextView) findViewById(R.id.password);
-        login = (Button) findViewById(R.id.login);
-        createacc = (Button) findViewById(R.id.create);
+        initViews();
+        setupListeners();
+        applyWindowInsets();
+    }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            v.setPadding(insets.getInsets(WindowInsetsCompat.Type.systemBars()).left,
-                    insets.getInsets(WindowInsetsCompat.Type.systemBars()).top,
-                    insets.getInsets(WindowInsetsCompat.Type.systemBars()).right,
-                    insets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom);
-            return insets;
-        });
+    private void initViews() {
+        email = findViewById(R.id.editTextTextEmailAddress);
+        password = findViewById(R.id.password);
+        login = findViewById(R.id.login);
+        createAcc = findViewById(R.id.create);
     }
 
     private void setupListeners() {
         login.setOnClickListener(v -> attemptLogin());
-        createacc.setOnClickListener(v -> startActivity(new Intent(Login.this, Register.class)));
+        createAcc.setOnClickListener(v -> startActivity(new Intent(Login.this, Register.class)));
     }
 
     private void attemptLogin() {
@@ -50,12 +45,16 @@ public class Login extends AppCompatActivity {
         String enteredPassword = password.getText().toString().trim();
 
         if (enteredEmail.isEmpty()) {
-            showToast("Email tidak boleh kosong!");
-        } else if (enteredPassword.isEmpty()) {
-            showToast("Password tidak boleh kosong!");
-        } else if (checkLogin(enteredEmail, enteredPassword)) {
+            email.setError("Email tidak boleh kosong!");
+            return;
+        }
+        if (enteredPassword.isEmpty()) {
+            password.setError("Password tidak boleh kosong!");
+            return;
+        }
+        if (checkLogin(enteredEmail, enteredPassword)) {
             showToast("Login berhasil!");
-            startActivity(new Intent(Login.this, HomeFragment.class));
+            startActivity(new Intent(Login.this, MainActivity.class));
             finish();
         } else {
             showToast("Email atau password salah!");
@@ -68,5 +67,20 @@ public class Login extends AppCompatActivity {
 
     private boolean checkLogin(String email, String password) {
         return "user@example.com".equals(email) && "password123".equals(password);
+    }
+
+    private void applyWindowInsets() {
+        View rootView = findViewById(R.id.main);
+        if (rootView != null) {
+            ViewCompat.setOnApplyWindowInsetsListener(rootView, (v, insets) -> {
+                v.setPadding(
+                        insets.getInsets(WindowInsetsCompat.Type.systemBars()).left,
+                        insets.getInsets(WindowInsetsCompat.Type.systemBars()).top,
+                        insets.getInsets(WindowInsetsCompat.Type.systemBars()).right,
+                        insets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom
+                );
+                return insets;
+            });
+        }
     }
 }

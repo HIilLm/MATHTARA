@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -18,6 +19,7 @@ public class Register extends AppCompatActivity {
 
     private EditText username, email, password, repassword;
     private Button signup;
+    private TextView signIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,30 +27,26 @@ public class Register extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_register);
 
-        username = (EditText) findViewById(R.id.username);
-        email = (EditText) findViewById(R.id.editTextTextEmailAddress);
-        password = (EditText) findViewById(R.id.password);
-        repassword = (EditText) findViewById(R.id.repassword);
-        signup = (Button) findViewById(R.id.signup);
-
         username = findViewById(R.id.username);
         email = findViewById(R.id.editTextTextEmailAddress);
         password = findViewById(R.id.password);
         repassword = findViewById(R.id.repassword);
         signup = findViewById(R.id.signup);
+        signIn = findViewById(R.id.textView9);
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                registerUser();
-            }
-        });
+        setupListeners(); // Memanggil metode setupListeners
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    private void setupListeners() {
+        signIn.setOnClickListener(v -> startActivity(new Intent(Register.this, Login.class)));
+
+        signup.setOnClickListener(v -> registerUser());
     }
 
     private void registerUser() {
@@ -83,7 +81,7 @@ public class Register extends AppCompatActivity {
         }
 
         Toast.makeText(this, "Registration successful!", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent(Register.this, Login.class));
+        startActivity(new Intent(Register.this, MainActivity.class));
         finish();
     }
 }
