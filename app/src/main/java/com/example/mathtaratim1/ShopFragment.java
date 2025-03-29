@@ -5,13 +5,25 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 
 public class ShopFragment extends Fragment {
 
     private OnGemPurchaseListener gemPurchaseListener; // Interface untuk komunikasi dengan MainActivity
+    private  OnGoldPurchaseListener goldPurchaseListener;
+
+    public interface OnGoldPurchaseListener {
+        void onGoldPurchased(int gold);
+    }
+
+    private void buyGolds(int amount) {
+        if (goldPurchaseListener != null) {
+            goldPurchaseListener.onGoldPurchased(amount); // Kirim jumlah gems ke MainActivity
+            Toast.makeText(getActivity(), "Gold bertambah: " + amount, Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     public ShopFragment() {
         // Required empty public constructor
@@ -32,11 +44,21 @@ public class ShopFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_shop, container, false);
 
-        View btnGem15K = view.findViewById(R.id.textView33);
+        View btnGem15K = view.findViewById(R.id.forgem15k);
         View btnGem85K = view.findViewById(R.id.textView34);
+        View btnGem175K = view.findViewById(R.id.textView35);
 
-        btnGem15K.setOnClickListener(v -> buyGems(15));
-        btnGem85K.setOnClickListener(v -> buyGems(85));
+        View btnGold20 = view.findViewById(R.id.forgoldmurah);
+        View btnGold250 = view.findViewById(R.id.textView31);
+        View btnGold750 = view.findViewById(R.id.textView32);
+
+        btnGold20.setOnClickListener(v -> buyGolds(100));
+        btnGold250.setOnClickListener(v -> buyGolds(500));
+        btnGold750.setOnClickListener(v -> buyGolds(1000));
+
+        btnGem15K.setOnClickListener(v -> buyGems(75));
+        btnGem85K.setOnClickListener(v -> buyGems(250));
+        btnGem175K.setOnClickListener(v -> buyGems(500));
 
         return view;
     }

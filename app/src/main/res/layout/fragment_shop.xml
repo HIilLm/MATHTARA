@@ -375,7 +375,7 @@
             app:srcCompat="@drawable/minidm" />
 
         <TextView
-            android:id="@+id/textView30"
+            android:id="@+id/forgoldmurah"
             android:layout_width="29dp"
             android:layout_height="23dp"
             android:layout_marginStart="90dp"
@@ -419,6 +419,20 @@
 
         <TextView
             android:id="@+id/textView33"
+            android:layout_width="77dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="230dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Rp. 15.000"
+            android:textAlignment="center"
+            android:textColor="#0B1423"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/forgem15k"
             android:layout_width="77dp"
             android:layout_height="23dp"
             android:layout_marginStart="65dp"
@@ -491,7 +505,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView29"
+            android:id="@+id/textView30"
             android:layout_width="79dp"
             android:layout_height="30dp"
             android:layout_marginStart="155dp"
