@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#3A4F88"
-    tools:context=".quiz1">
+    tools:context=".quiz3">
 
     <ImageView
         android:id="@+id/imageView18"

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MATHTARATIM1"
         tools:targetApi="31">
         <activity
+            android:name=".quiz3"
+            android:exported="false" />
+        <activity
+            android:name=".quiz2"
+            android:exported="false" />
+        <activity
             android:name=".MalinKundangActivity"
             android:exported="false" />
         <activity
@@ -28,16 +34,16 @@
             android:name=".prestory"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MATHTARATIM1"></activity>
+            android:theme="@style/Theme.MATHTARATIM1" />
         <activity
             android:name=".Login"
             android:exported="false"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MATHTARATIM1"></activity>
+            android:theme="@style/Theme.MATHTARATIM1" />
         <activity
             android:name=".Register"
             android:label="@string/app_name"
-            android:theme="@style/Theme.MATHTARATIM1"></activity>
+            android:theme="@style/Theme.MATHTARATIM1" />
     </application>
 
 </manifest>
