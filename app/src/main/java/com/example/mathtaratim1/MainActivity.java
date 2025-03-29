@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements
 
         imageView = findViewById(R.id.avatar);
         imageView.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, Login.class);
+            Intent intent = new Intent(MainActivity.this, Register.class);
             startActivity(intent);
         });
 
