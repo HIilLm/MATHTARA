@@ -89,7 +89,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="554dp"
                             android:fontFamily="@font/poppins_medium"
-                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue velit id interdum consequat. Suspendisse nec iaculis turpis, in sollicitudin lorem."
+                            android:text="Malin Kundang, seorang pemuda miskin dari desa kecil di pesisir Sumatera, bermimpi menjadi saudagar kaya raya. Dengan semangat dan tekad yang kuat, ia berlayar ke negeri-negeri jauh, menghadapi badai ganas, bajak laut kejam, serta misteri lautan yang belum terungkap."
                             android:textColor="#FFFFFF"
                             android:textSize="16sp"
                             app:layout_constraintEnd_toEndOf="parent"
