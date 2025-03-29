@@ -91,4 +91,6 @@ public class MainActivity extends AppCompatActivity implements
     private void updateGemText() {
         gemTextView.setText(String.valueOf(totalGems)); // Perbarui teks di navbar
     }
+
+
 }
