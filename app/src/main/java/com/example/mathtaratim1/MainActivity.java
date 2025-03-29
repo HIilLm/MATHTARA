@@ -47,6 +47,12 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
 
 
         bottomNavigationView = findViewById(R.id.bottomView);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, homeFragment).commit();
+
+        // **Set item default yang dipilih di BottomNavigationView**
+        bottomNavigationView.setSelectedItemId(R.id.home);
+
         bottomNavigationView.setOnItemSelectedListener(this);
     }
 
