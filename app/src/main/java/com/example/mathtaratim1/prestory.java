@@ -31,6 +31,8 @@ public class prestory extends AppCompatActivity {
                 saved = !saved;
                 if (saved) {
                 save.setImageResource(R.drawable.baseline_bookmark_24);
+                } else {
+                    save.setImageResource(R.drawable.baseline_bookmark_border_24);
                 }
             }
         });
