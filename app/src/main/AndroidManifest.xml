@@ -28,6 +28,12 @@
             android:name=".cerita1s1"
             android:exported="false" />
         <activity
+            android:name=".cerita1s2"
+            android:exported="false" />
+        <activity
+            android:name=".cerita1s3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
