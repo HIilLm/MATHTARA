@@ -16,13 +16,23 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class prestory extends AppCompatActivity {
 
-
+    Button next_cerita;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_prestory);
+
+        next_cerita = (Button) findViewById(R.id.button);
+
+        next_cerita.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent next_cerita = new Intent(getApplicationContext(), cerita1s1.class);
+                startActivity(next_cerita);
+            }
+        });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
