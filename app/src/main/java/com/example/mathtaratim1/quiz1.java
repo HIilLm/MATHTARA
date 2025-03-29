@@ -1,8 +1,10 @@
 package com.example.mathtaratim1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +30,34 @@ public class quiz1 extends AppCompatActivity {
         jawabanBenar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(quiz1.this, "Jawaban benar!", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(quiz1.this, quiz2.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
+        Button jawabanSalah1 = findViewById(R.id.button7);
+        jawabanSalah1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(quiz1.this, "Jawaban salah!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button jawabanSalah2 = findViewById(R.id.button10);
+        jawabanSalah2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(quiz1.this, "Jawaban salah!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        Button jawabanSalah3 = findViewById(R.id.button6);
+        jawabanSalah3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(quiz1.this, "Jawaban salah!", Toast.LENGTH_SHORT).show();
             }
         });
     }

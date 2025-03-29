@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ceritaa1"
+    android:background="@drawable/c1s3"
     tools:context=".cerita1s3">
 
     <TextView
@@ -27,7 +27,7 @@
         android:layout_marginEnd="43dp"
         android:fontFamily="@font/poppins_bold"
         android:justificationMode="inter_word"
-        android:text="malin kundang menolak untuk mngikuti ajakan topi jerami, dan memilih tetap be5rsama ibunya, malin kundang sering melawan dan tidak berbakti dengan ibunya, selang waktu malin kundang memiliki istri dan malin kundang tidak mengakui lagi ibunya di depan istrinya, lalu ibunya pun sakit hati"
+        android:text="malin kundang menolak untuk mngikuti ajakan topi jerami, dan memilih tetap bersama ibunya, malin kundang sering melawan dan tidak berbakti dengan ibunya, selang waktu malin kundang memiliki istri dan malin kundang tidak mengakui lagi ibunya di depan istrinya, lalu ibunya pun sakit hati"
         android:textAlignment="textStart"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
