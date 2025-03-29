@@ -62,16 +62,6 @@ public class AchivmentFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_achivment, container, false);
-        Button collection = view.findViewById(R.id.button9);
-        collection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.flFragment, new CollectionFragment());
-                transaction.addToBackStack(null);
-                transaction.commit();
-            }
-        });
         return view;
     }
 }
