@@ -43,6 +43,11 @@ public class MainActivity extends AppCompatActivity implements
             return insets;
         });
 
+        Intent intent = getIntent();
+        if (intent != null && intent.hasExtra("saved")) {
+            savedData = intent.getStringExtra("saved");
+        }
+
         imageView = findViewById(R.id.avatar);
         imageView.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Register.class);
