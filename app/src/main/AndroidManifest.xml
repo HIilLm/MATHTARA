@@ -13,10 +13,16 @@
         android:theme="@style/Theme.MATHTARATIM1"
         tools:targetApi="31">
         <activity
-            android:name=".quiz3"
+            android:name=".cerita1e2"
             android:exported="false" />
         <activity
-            android:name=".quiz2"
+            android:name=".cerita1e3"
+            android:exported="false" />
+        <activity
+            android:name=".cerita1e1"
+            android:exported="false" />
+        <activity
+            android:name=".cerita1s3"
             android:exported="false" />
         <activity
             android:name=".MalinKundangActivity"
