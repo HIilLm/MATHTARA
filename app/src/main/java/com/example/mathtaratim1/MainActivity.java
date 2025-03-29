@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements
     private ShopFragment shopFragment = new ShopFragment();
     private GearFragment gearFragment = new GearFragment();
     private HomeFragment homeFragment = new HomeFragment();
-    private CollectionFragment collectionFragment = new CollectionFragment();
     private FavoriteFragment favoriteFragment = new FavoriteFragment();
 
     private int totalGems = 0; // Awalnya 0
