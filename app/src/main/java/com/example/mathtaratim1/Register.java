@@ -18,8 +18,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class Register extends AppCompatActivity {
 
     private EditText username, email, password, repassword;
-    private Button signup;
     private TextView signIn;
+    private  Button signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
