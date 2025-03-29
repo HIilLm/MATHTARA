@@ -73,13 +73,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="186dp"
-                    android:layout_marginBottom="301dp"
+                    android:layout_marginBottom="280dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Malin Kundang"
                     android:textColor="#FFFFFF"
                     android:textSize="24sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
@@ -87,7 +88,7 @@
                     android:layout_width="385dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="548dp"
+                    android:layout_marginTop="568dp"
                     android:fontFamily="@font/poppins_medium"
                     android:text="Malin kundang, seorang pemuda miskin dari desa kecil di pesisir sumatera, bermimpi menjadi saudagar kaya raya.Dengan semangat dan tekat yang kuat, ia berlayar ke negeri negeri jauh, menghadapi badai ganas, bajak laut kejam, serta misteri lautan yang belum terungkap."
                     android:textColor="#FFFFFF"
