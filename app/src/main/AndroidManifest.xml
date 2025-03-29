@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MATHTARATIM1"
+
         tools:targetApi="31">
         <activity
             android:name=".cerita1e2"
@@ -26,6 +27,21 @@
             android:exported="false" />
         <activity
             android:name=".cerita1s1"
+            android:exported="false" />
+        <activity
+            android:name=".cerita1s2"
+            android:exported="false" />
+        <activity
+            android:name=".cerita1s3"
+            android:exported="false" />
+        <activity
+            android:name=".quiz1"
+            android:exported="false" />
+        <activity
+            android:name=".quiz2"
+            android:exported="false" />
+        <activity
+            android:name=".quiz3"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

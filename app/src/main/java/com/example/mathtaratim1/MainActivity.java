@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements
     private ShopFragment shopFragment = new ShopFragment();
     private GearFragment gearFragment = new GearFragment();
     private HomeFragment homeFragment = new HomeFragment();
-    private CollectionFragment collectionFragment = new CollectionFragment();
+    private AchivmentFragment achivmentFragment = new AchivmentFragment();
     private FavoriteFragment favoriteFragment = new FavoriteFragment();
 
     private int totalGems = 0; // Awalnya 0
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements
             getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, homeFragment).commit();
             return true;
         } else if (itemId == R.id.collection) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, collectionFragment).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, achivmentFragment).commit();
             return true;
         } else if (itemId == R.id.favorite) {
             getSupportFragmentManager().beginTransaction().replace(R.id.flFragment, favoriteFragment).commit();
