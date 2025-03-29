@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +24,7 @@ public class GearFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private boolean status = false;
 
     public GearFragment() {
 
@@ -60,6 +62,22 @@ public class GearFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_gear, container, false);
+        View view =  inflater.inflate(R.layout.fragment_gear, container, false);
+
+        TextView equiped = view.findViewById(R.id.textView49);
+
+        equiped.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                status = !status;
+                if (status) {
+                    equiped.setText("eqquiped");
+                } else {
+                    equiped.setText("unequiped");
+                }
+            }
+        });
+
+        return view;
     }
 }
