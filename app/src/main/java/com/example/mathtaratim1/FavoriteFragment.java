@@ -75,9 +75,9 @@ public class FavoriteFragment extends Fragment {
         // Observe changes in ViewModel
         sharedViewModel.getSavedData().observe(getViewLifecycleOwner(), data -> {
             if (data != null && !data.isEmpty()) {
-                malin.setVisibility(View.VISIBLE);
-            } else {
                 malin.setVisibility(View.GONE);
+            } else {
+                malin.setVisibility(View.VISIBLE);
             }
         });
 
